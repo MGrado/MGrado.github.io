@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marina Grado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style2.css" type="text/css" rel="stylesheet">
+    <title>About Me</title>
+      
+    <style>
+        
+         @media only screen and (max-width: 500px) {
+             
+             
+             body {
+                 margin-top: 15%;
+             }
+             
+             main {
+                 display: grid;
+                 grid-template-areas:
+                     "nav nav"
+                     "title title"
+                     "img img"
+                     "hs col";
+                 grid-template-columns: 1fr 1fr;
+                 grid-template-rows: 1% 5% 40% 60%;
+                 text-align: center;
+                 padding: 5%;
+             }
+             
+             nav {
+                 grid-area: nav;
+             }
+             
+             h1 { 
+                 grid-area: title;
+                  position: relative;
+                 left:8%;
+                 top: 0;
+                 bottom: 2%;
+                 font-weight: bold;
+                 font-size: 3em;
+             }
+             
+             h3 {
+                 color: #f85c4b;
+             }
+
+             main img {
+                 grid-area: img;
+                position: relative;
+                 left: 15%;
+                 top: 3%;
+             }
+
+             .highschool {
+                 grid-area: hs;
+                  background-color: white;
+                  border: 3px solid black;
+                  font-size: 1.5em;
+                  padding: 20px;
+                 position: relative;
+                left: 15%;
+             }
+             
+             .college {
+                 grid-area: col;
+                background-color: white;
+                border: 3px solid black;
+                font-size: 1.5em;
+                padding: 20px;
+                position: relative;
+                left: 25%;
+             }
+             
+             ul {
+                 list-style-type: none;
+                 padding: 10px;
+             }
+
+        }
+        @media only screen and (min-width: 501px) {
+            
+
+            main {
+                display: grid;
+                grid-template-areas: 
+                    "nav nav"
+                    "title title"
+                    "img img"
+                    "hs col";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1% 10% 35% ;
+            }
+            
+            nav {
+                grid-area: nav;
+            }
+        
+            h1 { 
+                grid-area: title;
+                font-weight: bold;
+                font-size: 3em;   
+                position: relative;
+                left: 33%;
+                top: 15%;
+                margin-top: 13%;
+            }
+        
+            main img {
+                grid-area: img;
+                position: relative;
+                left: 20%;
+            }
+        
+           .highschool {
+                  grid-area: hs;
+                  font-size: 1.5em;
+                  padding: 10px;
+                  width: 80%;
+                  position: relative;
+                  left: 5%;
+                  margin-top: 2%;
+             }
+             
+             .college {
+                grid-area: col;
+                font-size: 1.5em;
+                padding: 10px;
+                 width: 80%;
+                position: relative;
+                left: 10%;
+                 margin-top: 2%;
+             }
+      
+
+            main p { 
+                position: relative;
+                left: 25px;
+            }
+
+            h3 {
+                text-align: center;
+                color: #f85c4b;
+            }
+
+            .list {
+                background-color: white;
+                padding: 10px;
+                border: 3px solid black;
+            }
+            
+        }
+        
+        @media only screen and (min-width: 540px) {
+            
+             nav {
+                 min-width: 100%;
+                
+            }
+            
+             h1 { 
+                font-weight: bold;
+                font-size: 3em;   
+                position: relative;
+                left: 33%;
+                top: 15%;
+            }
+        
+            main img {
+                position: relative;
+                left: 20%;
+            }
+        
+           .highschool {
+                  font-size: 1.5em;
+                  padding: 10px;
+                  width: 100%;
+                  position: relative;
+                  left: 10%;
+                  margin-top: 2%;
+             }
+             
+             .college {
+                font-size: 1.5em;
+                padding: 10px;
+                 width: 100%;
+                position: relative;
+                left: 20%;
+                 margin-top: 2%;
+             }
+            
+            h3 {
+                color: #f85c4b;
+            }
+      
+      
+        }
+        
+             @media only screen and (min-width: 620px) {
+            
+             nav {
+                 min-width: 100%;
+                
+            }
+            
+             h1 { 
+                font-weight: bold;
+                font-size: 3em;   
+                position: relative;
+                left: 33%;
+                top: 15%;
+            }
+        
+            main img {
+                position: relative;
+                left: 20%;
+            }
+        
+           .highschool {
+                  font-size: 1.5em;
+                  padding: 10px;
+                  width: 100%;
+                  position: relative;
+                  left: 10%;
+                  margin-top: 10%;
+             }
+             
+             .college {
+                font-size: 1.5em;
+                padding: 10px;
+                 width: 100%;
+                position: relative;
+                left: 20%;
+                 margin-top: 10%;
+             }
+                 
+            h3 {
+                color: #f85c4b;
+             }
+        }
+        
+             @media only screen and (min-width: 670px) {
+            
+             nav {
+                 min-width: 100%;
+                
+            }
+            
+             h1 { 
+                font-weight: bold;
+                font-size: 3em;   
+                position: relative;
+                left: 33%;
+                top: 3%;
+            }
+        
+            main img {
+                position: relative;
+                left: 20%;
+            }
+        
+           .highschool {
+                  font-size: 1.5em;
+                  padding: 10px;
+                  width: 100%;
+                  position: relative;
+                  left: 10%;
+                  margin-top: 10%;
+             }
+             
+             .college {
+                font-size: 1.5em;
+                padding: 10px;
+                 width: 100%;
+                position: relative;
+                left: 20%;
+                 margin-top: 10%;
+             }
+                 
+            h3 {
+                color: #f85c4b;
+             }
+        }
+        @media only screen and (min-width: 768px) {
+            html, body {
+                overflow-x:hidden;
+                }
+            
+           main {
+                display: grid;
+                grid-template-areas: 
+                    "nav nav"
+                    "title title"
+                    "img img"
+                    "hs col";
+                grid-template-columns: 1fr 1fr;
+
+            }
+            
+                 h1 { 
+                font-weight: bold;
+                font-size: 3em;   
+                position: relative;
+                left: 33%;
+                top: -5%;
+            }
+        
+            main img {
+                position: relative;
+                left: 20%;
+            }
+        
+           .highschool {
+                  font-size: 1.5em;
+                  width: 90%;
+                  position: relative;
+                  left: 1.5%;
+                  margin-top: 10%;
+             }
+             
+             .college {
+                font-size: 1.5em;
+                 width: 90%;
+                position: relative;
+                left: 2.5%;
+                margin-top: 10%;
+             }
+            
+            h3 {
+                color: #f85c4b;
+            }
+        }
+        
+        @media only screen and (min-width: 820px) {
+            
+            html, body {
+              overflow-x:hidden;
+             }
+            
+         
+            main {
+                display: grid;
+                grid-template-areas: 
+                    "nav nav"
+                    "title title"
+                    "img img"
+                    "hs col";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1% 10% 38% 1fr;
+            }
+            
+            nav {
+                grid-area: nav;
+            }
+        
+           .highschool {
+                grid-area: hs;
+                position: relative;
+                left: 3%;
+                margin-top: 2%;
+               width: 75%;
+             }
+             
+             .college {
+                grid-area: col;
+                position: relative;
+                left: 6%;
+                 width: 75%;
+                 margin-top: 2%;
+             }
+      
+            
+              h1 { 
+                grid-area: title;
+                font-weight: bold;
+                font-size: 3em;   
+                position: relative;
+                left: 33%;
+                margin-top: 10%;
+                margin-bottom: 15%;
+            }
+            
+             main img {
+                grid-area: img;
+                position: relative;
+                left: 20%;
+            }
+            
+            h3 {
+                color: #f85c4b;
+            }
+            
+        }
+        
+        @media only screen and (min-width: 1000px) {
+            
+            html, body {
+              overflow-x:hidden;
+             }
+            
+         
+            main {
+                display: grid;
+                grid-template-areas: 
+                    "nav nav"
+                    "title title"
+                    "img img"
+                    "hs col";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1% 12% 35% 1fr;
+            }
+            
+            nav {
+                grid-area: nav;
+            }
+        
+           .highschool {
+                grid-area: hs;
+                position: relative;
+                left: 3%;
+                margin-top: 1%;
+               width: 80%;
+             }
+             
+             .college {
+                grid-area: col;
+                position: relative;
+                left: 6%;
+                width: 80%;
+                margin-top: 1%;
+             }
+      
+            
+              h1 { 
+                grid-area: title;
+                font-weight: bold;
+                font-size: 3.5em;   
+                position: relative;
+                left: 39%;
+                margin-top: 6%;
+                margin-bottom: 15%;
+            }
+            
+             main img {
+                grid-area: img;
+                position: relative;
+                left: 35%;
+                width: 20vw;
+            }
+            
+            li {
+                padding: 5px;
+            }
+            
+            h2 {
+                margin-bottom: -15px;
+            }
+            
+            h3 {
+                color: #f85c4b;
+            }
+        }
+        
+             
+        @media only screen and (min-width: 1024px) {
+            
+            html, body {
+              overflow-x:hidden;
+             }
+            
+         
+            main {
+                display: grid;
+                grid-template-areas: 
+                    "nav nav"
+                    "title title"
+                    "img img"
+                    "hs col";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1% 12% 35% 1fr;
+            }
+            
+            nav {
+                grid-area: nav;
+                font-size: 1.3em;
+            }
+        
+           .highschool {
+                grid-area: hs;
+                position: relative;
+                left: 3%;
+                margin-top: 1%;
+               width: 80%;
+             }
+             
+             .college {
+                grid-area: col;
+                position: relative;
+                left: 6%;
+                width: 80%;
+                margin-top: 1%;
+             }
+      
+            
+              h1 { 
+                grid-area: title;
+                font-weight: bold;
+                font-size: 3.5em;   
+                position: relative;
+                left: 33vw;
+                margin-top: 7.5%;
+                margin-bottom: 15%;
+            }
+            
+             main img {
+                grid-area: img;
+                position: relative;
+                left: 25%;
+                width: 35vw;
+            }
+            
+            li {
+                padding: 5px;
+            }
+            
+            h2 {
+                margin-bottom: -15px;
+            }
+            
+            h3 {
+                color: #f85c4b;
+            }
+        }
+        
+        @media only screen and (min-width: 2000px) {
+            
+            html, body {
+              overflow-x:hidden;
+             }
+            
+         
+            main {
+                display: grid;
+                grid-template-areas: 
+                    "nav nav"
+                    "title title"
+                    "img img"
+                    "hs col";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1% 12% 35% 1fr;
+            }
+            
+            nav {
+                grid-area: nav;
+                font-size: 1.3em;
+            }
+        
+           .highschool {
+                grid-area: hs;
+                position: relative;
+                left: 3%;
+                margin-top: 1%;
+               width: 80%;
+             }
+             
+             .college {
+                grid-area: col;
+                position: relative;
+                left: 6%;
+                width: 80%;
+                margin-top: 1%;
+             }
+      
+            
+              h1 { 
+                grid-area: title;
+                font-weight: bold;
+                font-size: 3.5em;   
+                position: relative;
+                left: 40vw;
+                margin-top: 6.5%;
+                margin-bottom: 15%;
+            }
+            
+             main img {
+                grid-area: img;
+                position: relative;
+                left: 30%;
+                width: 30vw;
+            }
+            
+            li {
+                padding: 5px;
+            }
+            
+            h2 {
+                margin-bottom: -15px;
+            }
+            
+            h3 {
+                color: #f85c4b;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        
+      <nav>
+            <ul>
+                <li><a href="../index.html"> Home</a> </li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html"> Resume</a> </li>
+                <li> <a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            
+            <h1> About Me:</h1>
+            
+            <img src="../images/portrait.JPG" alt="Senior Photo" title="Professional photo" height=500 width=400>
+            
+
+            <div class="highschool">
+
+            <h2> High School:</h2>
+            <p> I graduated in 2023 from Gateway High School in Monroeville, PA. While in high school, I was able to make my impact both in and out of the classroom.</p>
+            
+            <div class="list">
+            <h3> Accomplishments:</h3>
+                
+                <ul>
+                    <li> Salutatorian</li>
+                    <li> National Honors Society</li>
+                    <li>VP of Student Council</li>
+                    <li> Chick-fil-A Leadership Club</li>
+                    <li> 4 years Varsity Basketball
+                    <ul>
+                    <li> 2020 Section Champions</li>
+                    </ul></li>
+                    <li>4 years Varsity Track &amp; Field</li>
+                    <li> 4 years Cross Country</li>
+                </ul>
+            </div>
+            </div>
+            <div class="college">
+                <h2> College:</h2>
+            <p> I currently attend W&amp;J College, with the intention to graduate in 2027. While I have been here a brief time, I already have so much to reflect on in both the classroom and athletically.</p>
+            
+            <div class="list">
+            <h3> Accomplishments:</h3>
+                
+                <ul>
+                    <li> Alpha Scholar</li>
+                    <li> Dean's List</li>
+                    <li> Polar Plunge Co-Coordinator</li>
+                    <li> Women's Basketball
+                    <ul>
+                    <li> 2025 PAC Champion</li>
+                    </ul></li>
+                    <li> Women's Track &amp; Field</li>
+                </ul>
+            </div>
+            </div>
+        </main>
+    
+    </body>
+    
+</html>
+

@@ -1,0 +1,80 @@
+html, body {
+    background-color: gainsboro;
+    padding: 3px;
+    margin: 4px;
+}
+
+@font-face {
+  font-family: MyFont;
+  src:url("font/Kageno.otf");
+}
+
+
+nav {
+    font-family: MyFont;
+    min-width: 100%;
+    height: 85px;
+    background-color: #f85c4b;
+    border-bottom: 4px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6em;
+    display: flex;
+    align-items: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    width:100%;
+    color: white;
+    padding: 25px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+img {
+    border: 20px solid black;
+    box-shadow: 10px 10px gray;
+}
+
+.contact a{
+    color: black;
+}
+
+.contact a:hover{
+    color: #f85c4b;
+}
+
+.contact button{
+  color: black;
+  text-align: center;
+  margin-top: 0;
+  display: inline-block;
+ font-size: 1em;
+ position: relative;
+ right: 20;
+ border: 3px solid black;
+ box-shadow: 2px 2px;
+ border-radius: 8px;
+}
+
+.contact button:hover {
+    background-color: #f85c4b;
+}

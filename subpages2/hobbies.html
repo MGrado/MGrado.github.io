@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marina Grado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="../style2.css" type="text/css" rel="stylesheet">
+    <title>Hobbies</title>
+      
+       <style>
+            @media only screen and (max-width: 500px) {
+                
+                
+            body {
+                margin-top: 20%;
+                margin-bottom: 10%;  
+            }
+                
+             h1 {
+                font-size: 3.5em;
+                position: relative;
+                left: 55%;
+            }
+                
+             main p {
+                font-size: 2em;
+                position: relative;
+                left: 35%;
+                 margin-top: -20px;
+                text-align: center;
+            }
+                
+            .hobby {
+              position: relative;
+              width:100%;
+              margin: 50px;
+              left: 15%;
+            }
+
+            .image {
+              opacity: 1;
+              display: block;
+              width= 100%;
+              transition: .5s ease;
+              backface-visibility: hidden;
+            }
+
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+
+            .hobby:hover .image {
+              opacity: 0.3;
+            }
+
+            .hobby:hover .middle {
+              opacity: 1;
+            }
+
+            .text {
+              background-color: #f85c4b;
+              color: white;
+              font-size: 40px;
+              padding: 16px 32px;
+            }
+                
+        }
+           
+        @media only screen and (min-width: 501px){
+            
+            body, html {
+                overflow-x: hidden;
+            }
+            
+            body {
+                margin-top: 10%;
+                margin-bottom: 10%; 
+                
+            }
+                
+             h1 {
+                font-size: 3.5em;
+                position: relative;
+                left: 35%;
+            }
+                
+             main p {
+                font-size: 2em;
+                position: relative;
+                left: 5%;
+                width: 90%;
+                text-align: center;
+                margin-top: -20px;
+            }
+                
+            .hobby {
+              position: relative;
+              width:80%;
+              margin: 50px;
+              left: 2%;
+            }
+
+            .image {
+              opacity: 1;
+              display: block;
+              width= 100%;
+              transition: .5s ease;
+              backface-visibility: hidden;
+            }
+
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+
+            .hobby:hover .image {
+              opacity: 0.3;
+            }
+
+            .hobby:hover .middle {
+              opacity: 1;
+            }
+
+            .text {
+              background-color: #f85c4b;
+              color: white;
+              font-size: 50px;
+              padding: 16px 32px;
+            }
+   
+           }
+           
+        @media only screen and (min-width: 1000px){
+            
+            body, html {
+                overflow-x: hidden;
+            }
+            
+            body {
+                margin-top: 5%;
+                margin-bottom: 5%; 
+                
+            }
+                
+             h1 {
+                font-size: 3.5em;
+                position: relative;
+                left: 40.5vw;
+            }
+            
+            .container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                position: relative;
+                right: 3%;
+            }
+                
+             main p {
+                font-size: 2em;
+                position: relative;
+                text-align: center;
+            }
+                
+            .hobby {
+              position: relative;
+              width:30%;
+              margin: 25px;
+            }
+
+            .image {
+              opacity: 1;
+              display: block;
+              width=100%;
+              transition: .5s ease;
+              backface-visibility: hidden;
+            }
+
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+
+            .hobby:hover .image {
+              opacity: 0.3;
+            }
+
+            .hobby:hover .middle {
+              opacity: 1;
+            }
+
+            .text {
+              background-color: #f85c4b;
+              color: white;
+              font-size: 45px;
+              padding: 16px 32px;
+            }
+            
+            nav {
+                font-size: 1.3em;
+            }
+           }
+       
+
+    </style>
+      
+    </head>
+    
+    <body>
+         <nav> 
+              <ul>
+                <li><a href="../index.html"> Home</a> </li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html"> Resume</a> </li>
+                <li> <a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            
+            <h1> Hobbies:</h1>
+            
+            <p> Hover/click on the image to learn about my interests. Outside of school, I love to travel around the world and play the sports I love with my best friends.</p>
+            
+            <div class="container">
+            <div class = "hobby">
+            <div id="img1">
+                <img src="../images/PACV.jpeg" alt="Winning PAC championship" title="PAC photo" width=100%>
+            </div>
+                <div class="middle">
+                <div class="text">2025 PAC Champions for Women's Basketball</div>
+            </div>
+            
+            </div>
+            
+             <div class = "hobby">
+                <div id="img2">
+                <img src="../images/trackV.jpeg" alt="WashJeff Track photo" title="Track" width=100%>
+                </div>
+               <div class="middle">
+                <div class="text">2024 PAC Track &amp; Field</div>
+            </div>
+            
+            </div>
+          
+            
+             <div class = "hobby">
+                <div id="img3">
+                <img src="../images/graduation.jpeg" alt="Friends at graduation" title="HS graduation" width=100%>
+                </div>
+                <div class="middle">
+                <div class="text">Home-town friends at graduation</div>
+            </div>
+            
+            </div>
+            
+             <div class = "hobby">
+                <div id="img4">
+                <img src="../images/philippines.jpeg" alt="Phillipines Trip" title="Photo With Dad" width=100%>
+                </div>
+              <div class="middle">
+                <div class="text">Phillipines trip to visit my family</div>
+            </div>
+            
+            </div>
+            
+             <div class = "hobby">
+                <div id="img5">
+                <img src="../images/italy.jpeg" alt="Italy trip" title="Italy" width=100%>
+                </div>
+            <div class="middle">
+                <div class="text">Team trip to travel around Italy</div>
+            </div>
+            
+            </div>
+            
+             <div class = "hobby">
+                <div id="img6">
+                <img src="../images/mexico2.jpeg" alt="Mexico Trip" title="Mexico" width=100%>
+                </div>
+            <div class="middle">
+                <div class="text">Family vacation to Mexico</div>
+            </div>
+            
+            </div>
+        </div>
+        </main>
+    
+    </body>
+    
+</html>
+
+<!-- Hover effect from W3 schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity --> 
